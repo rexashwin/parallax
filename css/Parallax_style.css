@@ -4,6 +4,7 @@
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Lato', sans-serif; */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 .head{
     background-image: url(../image/parallax1.jpg);
@@ -272,39 +273,35 @@
     width: 70%;
     position: relative;
 }
+.contact .detail{
+    display: flex;
+    margin-top: 40px;
+}
 .contact .detail img{
-    width: 320px;
-    height: 240;
-    border-radius: 20px;
-    /* display: inline; */
+    width: 280px;
+    border-radius: 5px;
 }
 .contact .detail h3{
-    text-align: left;
-    /* display: inline; */
-    margin: 10px;
-    line-height: 50px;
-    font-size: 24px;
+    margin: 10px 40px;
+    line-height: 40px;
+    font-size: 16px;
     font-weight: 200;
-    float: right;
     width: 65%;
 }
-.enterdetail{
-    text-align: right;
-    width: 65%;
-    margin: 10px;
+.clearfix {
+    width: 66%;
+    height: auto;
     float: right;
+    margin-top: -40px;
 }
-.enterdetail p{
-    text-align: left;
-}
-.name input{
-    width: 47.9%;
+.clearfix form input{
+    width: 47.4%;
     height: 40px;
-    margin: 30px 0px;
+    margin: 10px 0px;
     border: 1px solid #b4b4b4;
     padding: 5px;
 }
-.msg textarea{
+.clearfix form textarea{
     width: 99%;
     height: auto;
 }
@@ -319,9 +316,15 @@
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     cursor: pointer;
+    float: right;
 }
-
-.clearFix {
-    width: 100vw;
-    height: 500px;
+footer{
+    margin: 100px 0 0 0;
+    height: 200px;
+    background-color: #111;
+    color: white;
+}
+footer p{
+    margin: 80px auto;
+    text-align: center; 
 }
